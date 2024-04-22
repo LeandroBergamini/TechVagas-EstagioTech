@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using TechVagas_EstagioTech.Model.Entities;
 
 namespace TechVagas_EstagioTech.Dtos.Entities
 {
@@ -16,5 +17,11 @@ namespace TechVagas_EstagioTech.Dtos.Entities
         [MinLength(3)]
         [MaxLength(100)]
         public string? turnoCurso { get; set; }
+
+        public InstituicaoEnsinoModel instituicaoEnsinoModel { get; set; }
+
+        public int InstituicaoEnsinoId { get; set; }
+
+      
     }
 }

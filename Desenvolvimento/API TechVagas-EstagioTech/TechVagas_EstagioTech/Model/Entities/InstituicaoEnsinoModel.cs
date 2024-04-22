@@ -7,8 +7,8 @@ namespace TechVagas_EstagioTech.Model.Entities
     public class InstituicaoEnsinoModel
     {
         [Key]
-        [Column("id")]
-        public int Id { get; set; }
+        [Column("instituicaoensinoid")]
+        public int InstituicaoEnsinoId { get; set; }
 
         [Column("nomeinstituicao")]
         public string NomeInstituicao { get; set; }
@@ -18,6 +18,8 @@ namespace TechVagas_EstagioTech.Model.Entities
 
         [Column("telefone")]
         public string Telefone { get; set; }
+
+        public ICollection<CursoModel>? Curso { get; set; }
 
     }
 }

@@ -13,6 +13,10 @@ namespace TechVagas_EstagioTech.Model.Entities
 
 
         [Column("turnocurso")]
-        public string? turnoCurso { get; set; }
-    }
+        public string? turnoCurso { get; set; } 
+
+        public InstituicaoEnsinoModel instituicaoEnsinoModel { get; set; }
+
+        public int InstituicaoEnsinoId { get; set; }
+    } 
 }
